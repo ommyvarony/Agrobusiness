@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+
+}
+
+
+
+
+.product{
+    width: 100%;
+   
+    /* background-image: url(logo\ 13.jfif);  */
+    background-size: 500PX;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0ba847;
+
+}
+
+.product h1{
+    margin: 35px o;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(17, 21, 24), rgb(32, 116, 15));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.product .box{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+
+}
+
+.product .box .card{
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 0 8px #3ad014;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    background: #043b73;
+    align-items: center;
+}
+
+.product .box .card .small_card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition: 5s;
+    opacity: 0;
+}
+
+.product .box .card:hover .small_card{
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 0;
+}
+
+.product .box .image img{
+    width: 30%;
+    top: 20%;
+    transition: 0.4s;
+}
+
+.product .box .card:hover .image img{
+    transform: scale(1.1);
+    width: 70px;
+}
+
+.product .box .card .product_text h2{
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.product .box .card .product_text p1{
+    color: #0ba847;
+    line-height: 21px;
+    margin: 8px 0;
+
+}
+
+.product .box .card .product_text h3{
+    margin: 5px 0;
+
+}
+
+.btn{
+    position: center;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: linear-gradient(to right,#15cf0f , #0cb5d3);
+    padding-top: 1%;
+}
+button{
+    position: center;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: linear-gradient(to right,#15cf0f , #0cb5d3);
+    padding-top: 2%;
+    cursor: pointer;
+}
+
+
+.toggle {
+
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+nav {
+    background-color: var(--primary-color);
+    border-left: 2px solid rgba(200, 200, 200, 0.1);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 250vh;
+    z-index: 100;
+    transform: translateX(100%);
+}
+
+
